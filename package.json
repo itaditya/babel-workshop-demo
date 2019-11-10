@@ -4,6 +4,7 @@
   "description": "",
   "main": "public/script.js",
   "scripts": {
+    "dev": "babel src --watch --out-dir public",
     "build": "babel src --out-dir public"
   },
   "keywords": [],
