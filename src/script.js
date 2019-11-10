@@ -1,15 +1,13 @@
-"use strict";
-
 const elemImg = document.querySelector('.js-img');
 const elemBtn = document.querySelector('.js-btn');
+
 let originalBtnText;
 
 async function ajaxGetDogImg() {
   const resRandomDog = await fetch('https://dog.ceo/api/breeds/image/random');
   const dataRandomDog = await resRandomDog.json();
-  const {
-    message
-  } = dataRandomDog;
+
+  const { message } = dataRandomDog;
   return message;
 }
 
@@ -26,9 +24,10 @@ async function handleBtnClick(event) {
   elemImg.setAttribute('src', urlDog);
 }
 
-elemBtn.addEventListener('click', event => {
+elemBtn.addEventListener('click', (event) => {
   handleBtnClick(event);
 });
-elemImg.addEventListener('load', event => {
+
+elemImg.addEventListener('load', (event) => {
   handleImgLoad(event);
 });
