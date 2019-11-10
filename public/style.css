@@ -1,0 +1,22 @@
+.random-image:before {
+  content: "";
+  display: block;
+}
+
+.random-image:before, .random-image {
+  width: 480px;
+  height: 320px;
+  margin-bottom: 20px;
+}
+
+.load-image {
+  display: block;
+  padding: 20px 10px;
+  background-color: rebeccapurple;
+  color: #fff;
+  font-size: 32px;
+  border: none;
+  border-radius: 4px;
+  min-width: 200px;
+  min-height: 40px;
+}
