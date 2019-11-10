@@ -25,6 +25,8 @@ async function handleBtnClick(event) {
 }
 
 elemBtn.addEventListener('click', (event) => {
+  const { x, y } = getWindowSize(window);
+  console.log(`width is ${x}, height is ${y}`);
   handleBtnClick(event);
 });
 

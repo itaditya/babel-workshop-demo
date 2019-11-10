@@ -4,8 +4,8 @@
   "description": "",
   "main": "public/script.js",
   "scripts": {
-    "dev": "babel src --watch --out-dir public",
-    "build": "babel src --out-dir public"
+    "dev": "babel src/modern --watch --out-dir public",
+    "build": "cp src/script.js public/script.js && babel src/modern --out-dir public"
   },
   "keywords": [],
   "author": "",
